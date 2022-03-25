@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red-Mart</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div id="navheader">
+            <div class="search">
+
+
+                <div class="logo">Logo</div>
+                <select id="selectbox2">
+
+                    <optgroup label="Collectibles & Art">
+                        <option value="Collectibles" selected="selected"><a href="">Shop by<br> Category</a></option>
+                        <option value="Antiques"><a href="">Antiques</a></option>
+                        <option value="Sports memorabilia"><a href="">Sports memorabilia</a></option>
+                        <option value="Art"><a href="">Art</a></option>
+                    </optgroup>
+
+                    <optgroup label="Home & Garden">
+                        <option value="Yard, Garden & Outdoor"><a href="">Yard, Garden & Outdoor</a></option>
+                        <option value="Crafts"><a href="">Crafts</a></option>
+                        <option value="Home Improvement"><a href="">Home Improvement</a></option>
+                        <option value="Pet Supplies"><a href="">Pet Supplies</a></option>
+                    </optgroup>
+
+                    <optgroup label="Sporting Goods">
+                        <option value="Outdoors Sports"><a href="">Outdoors Sports</a></option>
+                        <option value="Team Sports"><a href="">Team Sports</a></option>
+                        <option value="Exercise & Fitness"><a href="">Exercise & Fitness</a></option>
+                        <option value="Golf"><a href="">Golf</a></option>
+
+                    </optgroup>
+
+                    <optgroup label="Electronics">
+                        <option value="Computer & Tablets"><a href="">Computer & Tablets</a></option>
+                        <option value="Cameras &  Photo"><a href="">Cameras & Photo</a></option>
+                        <option value="TV, audio & Survellance"><a href="">TV, audio & Survellance</a></option>
+                        <option value="Cell phones & Accessories"><a href="">Cell phone & Accessories</a></option>
+                    </optgroup>
+
+                    <optgroup label="Audio Parts & Accessories ">
+                        <option value="GPS & Security Device"><a href="">GPS & Security Device</a></option>
+                        <option value="Radar & Laser Detectors"><a href="">Radar & Laser Detectors</a></option>
+                        <option value="Care & Detailing"><a href="">Care & Detailing</a></option>
+                        <option value="Scooter Parts & Accessories"><a href="">Scooter Parts & Accessories</a></option>
+                    </optgroup>
+
+                    <optgroup label="Toys & Hobbies">
+                        <option value="Radio control"><a href="">Radio control</a></option>
+                        <option value="Kids toys"><a href="">Kids toys</a></option>
+                        <option value="Action Figures"><a href="">Action Figures</a></option>
+                        <option value="Dolls & Bears"><a href="">Dolls & Bears</a></option>
+                    </optgroup>
+
+                    <optgroup label="Fashion">
+                        <option value="Women"><a href="">Women</a></option>
+                        <option value="Men"><a href="">Men</a></option>
+                        <option value="Jewelry & Watches"><a href="">Jewelry & Watches</a></option>
+                        <option value="Shoes"><a href="">Shoes</a></option>
+                    </optgroup>
+
+                    <optgroup label="Musical Instruments & gear">
+                        <option value="Guitar"><a href="">Guitar</a></option>
+                        <option value="Por audio equipment"><a href="">Pro audio equipment</a></option>
+                        <option value="String"><a href="">String</a></option>
+                        <option value="Stage lighting & effects"><a href="">Stage lighting & effects</a></option>
+                    </optgroup>
+
+                    <optgroup label="Other Categories">
+                        <option value="Video games & consoles"><a href="">Video games & consoles</a></option>
+                        <option value="Health & Beauty"><a href="">Health & beauty</a></option>
+                        <option value="Baby"><a href="">Baby</a></option>
+                        <option value="Business & industrial"><a href="">Business & industrial</a></option>
+                    </optgroup>
+
+                </select>
+                <!-- search box -->
+                <input type="search" placeholder="Search for anything" class="searchbox">
+
+                <select id="selectbox">
+                    <option value="All Categories" class="optionval" selected="selected">All Categories</option>
+                    <option value="Antiques">Antiques</option>
+                    <option value="Art">Art</option>
+                    <option value="Books ">Books</option>
+                    <option value=" Baby">Baby</option>
+                    <option value="Business & Industrial ">Business & Industrial</option>
+                    <option value=" Camera & Photo">Camera & Photo</option>
+                    <option value=" Clothing">Clothing</option>
+                    <option value="Shoes ">Shoes</option>
+                    <option value="Accessories ">Accessories</option>
+                    <option value="Paper Money ">Paper Money</option>
+                    <option value=" Computer/Tablets">Computer/Tablets</option>
+                    <option value="Consumer Electronics ">Consumer Electronics</option>
+                    <option value="Crafts ">Crafts</option>
+                    <option value="DVD Movies ">DVD Movies</option>
+                    <option value="Health & Beauty ">Health & Beauty</option>
+                    <option value="Gift Cards ">Gift Cards</option>
+                    <option value="Jewallery ">Jewallery</option>
+                    <option value="Music ">Music</option>
+                    <option value="Video Games ">Video Games</option>
+                </select>
+                <div class="btn">
+                    <a href="">Search</a>
+                </div>
+            </div>
+            <!-- ============Navbar========= -->
+            <nav id="navbar">
+                <span class="axe" onclick="crosse()"><i class="fa fa-times" aria-hidden="true"></i>
+                </span>
+                <ul>
+
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Fashion</a></li>
+                    <li><a href="">Beauty</a></li>
+                    <li><a href="">Saved</a></li>
+                    <li><a href="">Electronics</a></li>
+                    <li class="cart"><a href=""><i class="fa fa-user"></i> </a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <span class="cart"><a href=""><i class="fa fa-shopping-cart"></i></a></span>
+        <span class="heart"><a href=""><i class="fa fa-heart-o"></i></a></span>
+        <!-- =====toggle bar -->
+        <div class="bars" onclick="baars()"><i class="fa fa-bars fa-2x"></i>
+        </div>
+
+    </header>
+
+
+    <!-- /////////         I M  N G E    C  N R  N S O U  N L       ////////////////-->
+
+    <scroll id="animate">
+
+        <div class="imgbox">
+            <!-- IMG 1 -->
+            <div class="slide1 active">
+                <img src="imges/scroll1.jpg" alt="attid">
+                <div class="content">
+                    <h1><span>GIANT</span>SALE</h1>
+                    <p> Works Everyday during this holidays season</p>
+                    <h1 class="hcopy">70% OFF</h1>
+                    <a href=""><button>READ MORE</button></a>
+                </div>
+            </div>
+
+            <!-- IMG 2 -->
+            <div class="slide1">
+                <img src="imges/scroll5.jpg" alt="attid">
+                <div class="content1">
+                    <h1>Get up to 30% off<br>New Arrivals</h1>
+                    <p> SPRING / SUMMER COLLECTION 2021</p>
+                    <h1>70% OFF</h1>
+                    <a href=""><button>SHOP NOW</button></a>
+                </div>
+            </div>
+
+            <!-- img  3 -->
+            <div class="slide1 sizecover">
+                <img src="imges/scroll8.jpg" alt="attid">
+                <div class="content2">
+                    <h3>-New Arrivals-</h3>
+                    <h2>SPRING SUMMER'21</h2>
+                    <h1> MEN'S T-SHIRTS<BR>& POLOS</h1>
+                    <figure>
+                        <SPAN><img src="imges/brand1.png" alt=""></SPAN> <span><img src="imges/brand2.png"
+                                alt=""></span>
+                    </figure>
+                    <a href=""><button>SHOP NOW</button></a>
+                </div>
+            </div>
+
+            <!-- img 4 -->
+            <div class="slide1 slide4">
+                <img src="imges/scroll2.png" alt="attid">
+                <div class="content3">
+                    <h1>iPhone 12 Pro</h1>
+                    <h3>6.1-inch Super Retina XDR display*</h3>
+                    <h2>$1,555.7</h2>
+                    <p>In stock on June 12, 2021.</p>
+                    <p><small>SBI<span>Card</span> 10% Instant Discount with <br>SBI credit Card </small></p>
+                    <a href=""><button>Buy Now</button></a>
+                </div>
+            </div>
+            <div id="lefticonbtn" onclick="leftscroll()">
+                <h1><span> <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                    </span> </h1>
+            </div>
+            <div id="righticonbtn" onclick="rightscroll()">
+                <h1><span><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </span></h1>
+            </div>
+        </div>
+
+    </scroll>
+
+    <!-- Features      c ategories  -->
+    <div class="figure">
+        <div class="titles">
+            <h1 class="title">Featured <span>Categories</span></h1>
+            <div class="shop-box center">
+
+                <div class="shop-img">
+                    <img src="imges/scroll0.jpg" alt="women">
+                    <div class="img-heading" id="head1">
+                        <h1>Women's Clothing</h1>
+                        <a href="">Shop Now</a>
+                    </div>
+                </div>
+
+                <div class="shop-img">
+                    <img src="imges/shop/shop4.jpg" alt="Accessories">
+                    <div class="img-heading " id="head2">
+                        <h1>Accessories</h1>
+                        <a href="">Shop Now</a>
+                    </div>
+                </div>
+
+                <div class="shop-img">
+                    <img src="imges/shop/shop3.jpg" alt="men">
+                    <div class="img-heading " id="head3">
+                        <h1>Men's Clothing</h1>
+                        <a href="">Shop Now</a>
+                    </div>
+                </div>
+
+                <div class="shop-img">
+                    <img src="imges/rlaptop.jpg" alt="laptop">
+                    <div class="img-heading " id="head4">
+                        <h1>Laptop's</h1>
+                        <a href="">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shop collection -->
+
+    <section class="shop-collection">
+        <div class="shop-title">
+            <h1>Shop Collection</h1>
+        </div>
+        <div class="shop-container">
+            <div class="shop-parent">
+
+                <div class="shop-photo">
+                    <img src="imges/shop/shop-photo1.jpg" alt=shop1>
+                    <h3>T-shirts & Jeans<br>Starting $20.</h3>
+                    <div class="photo-icon">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="shop-photo1">
+                    <img src="imges/shop/shop-photo5.jpg" alt=shop2>
+                    <h3>Handbags<br>Starting $40.</h3>
+                    <div class="photo-icon1">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="shop-photo2">
+                    <img src="imges/shop/shop-photo3.jpg" alt=shop2>
+                    <h3> Summer T-shirts<br>Starting $10.</h3>
+                    <div class="photo-icon2">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="shop-photo3">
+                    <img src="imges/shop/shop-photo4.jpg" alt=shop2>
+                    <h3>Runing shoes<br>Starting $24.</h3>
+                    <div class="photo-icon3">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="shop-photo33">
+                    <img src="imges/shop/shop-photo8.jpg" alt=shop2>
+                    <h3>Combo Pack<br>Starting $34.</h3>
+                    <div class="photo-icon33">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!--Shop -parent22222222222222  -->
+            <div class="shop-parent2">
+
+                <div class="shop-photo4">
+                    <img src="imges/shop/shop-photo10.jpg" alt=shop2>
+                    <h3>Party Shoes<br>Starting $21.</h3>
+                    <div class="photo-icon4">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+
+                <div class="shop-photo5">
+                    <img src="imges/shop/shop-photo6.jpg" alt=shop2>
+                    <h3>Outfit Wear<br>Starting $36.</h3>
+                    <div class="photo-icon5">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="shop-photo6">
+                    <img src="imges/shop/shop-photo11.jpg" alt=shop2>
+                    <h3>Party Wear<br>Starting $30.</h3>
+                    <div class="photo-icon6">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="shop-photo7">
+                    <img src="imges/shop/shop-photo12.jpg" alt=shop2>
+                    <h3>Combo Pack<br>Starting $28.</h3>
+                    <div class="photo-icon7">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="shop-photo8">
+                    <img src="imges/shop/shop-photo13.jpg" alt=shop2>
+                    <h3>Polo T-Shirts<br>Starting $28.</h3>
+                    <div class="photo-icon8">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <!-- L  N T E S T   P R O D U C T S  -->
+
+    <section class="section2">
+        <div class="latest-title">
+            <h1>Latest Products</h1>
+        </div>
+        <div class="latestproduct-box">
+            <div class="latestproduct-parent">
+
+                <div class="latestproduct-img">
+                    <img src="imges/latest1.png" alt="headphone1">
+                    <div class="latest-heading">
+                        <h4>New colors & feature</h4>
+                        <h1>HeadPhones</h1>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+
+                <div class="latestproduct-img">
+                    <img src="imges/latest2.png" alt="headphone1">
+                    <div class="latest-heading">
+                        <h4>New colors & feature</h4>
+                        <h1>SMARTPHONES</h1>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-------women suit- UP TO 70% OFF--- -->
+
+    <div class=section3>
+        <div class="womensari-heading">
+            <p> Up to 70% off | Women's clothing | Brands-Anarva & Nora NicoSee all deals</p>
+        </div>
+        <hr>
+        <div class="women-parent">
+            <div class="womensari-img">
+                <img src="imges/women/suit1.jpg" alt="women1">
+                <img src="imges/women/suit2.jpg" alt="women1">
+                <img src="imges/women/suit3.jpg" alt="women1">
+                <img src="imges/women/suit4.jpg" alt="women1">
+                <img src="imges/women/suit5.jpg" alt="women1">
+                <img src="imges/women/suit7.jpg" alt="women1">
+            </div>
+            <hr>
+
+        </div>
+    </div>
+
+    <!----  M E N's  F E S H I O N  --- -->
+
+    <div class=section4>
+        <div class="men-heading">
+            <p> Men's bottomwear collection</p>
+        </div>
+        <hr>
+        <div class="men-parent">
+            <div class="men-img">
+                <img src="imges/men/men1.jpg" alt="women1">
+                <img src="imges/men/men2.jpg" alt="women1">
+                <img src="imges/men/men3.jpg" alt="women1">
+                <img src="imges/men/men4.jpg" alt="women1">
+                <img src="imges/men/men5.jpg" alt="women1">
+                <img src="imges/men/men6.jpg" alt="women1">
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <!-----  watch ----->
+    <div class="watch-container">
+
+        <div class="watch-title">
+            <h1>Featured Products</h1>
+        </div>
+        <div class="watchclip-path">
+            <div class="watch-parent">
+
+                <div class="watchbig-img">
+                    <img src="imges/watch/watch5.jpg" alt="5" id="main-watch">
+                </div>
+                <div class="watchsmall-img">
+                    <img src="imges/watch/watch1.jpg" alt="1" class="smallimg">
+                    <img src="imges/watch/watch2.jpg" alt="2" class="smallimg">
+                    <img src="imges/watch/watch3.jpg" alt="3" class="smallimg">
+                    <img src="imges/watch/watch4.jpg" alt="4" class="smallimg">
+                </div>
+                <div class="watch-description">
+                    <div class="watch-name">
+                        <h1>Smart Watches</h1>
+                        <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                        <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                        <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                        <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                        <span><i class="fa fa-star" aria-hidden="true"></i></span><span
+                            class="reviews">(500+)Reviews</span>
+
+
+                        <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit.Assumenda, at!
+                        <p>
+
+                            <span class="pricetag">$100<s>$120</s></span><button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <!-- delivery & pay box -->
+    <div class="delivery-container">
+        <div class="delivery-title">
+            <h1>Update on deliveries & more</h1>
+        </div>
+
+        <div class="delivery-parent">
+            <div class="delivery-box">
+                <span id="delivery-box"><i class="fa fa-truck" aria-hidden="true"></i></span>
+                <h3>Fast's Delivery</h3>
+                <p>Lorem ipsum dolor consectetur<br>
+                    adipisicing elit.</p>
+            </div>
+
+            <div class="delivery-box">
+                <span><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+                <h3>24 X 7 Support</h3>
+                <p>Lorem ipsum dolor consectetur<br>
+                    adipisicing elit.</p>
+            </div>
+
+            <div class="delivery-box">
+                <span><i class="fa fa-cc-paypal" aria-hidden="true"></i></span>
+                <h3>Easy Payments</h3>
+                <p>Lorem ipsum dolor consectetur<br>
+                    adipisicing elit.</p>
+            </div>
+
+            <div class="delivery-box">
+                <span><i class="fa fa-shopping-basket" aria-hidden="true"></i></span>
+                <h3>10 Days Replacement</h3>
+                <p>Lorem ipsum dolor consectetur<br>
+                    adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Beauty products -->
+
+    <div class="beauty-container">
+
+        <div class="beauty-parent1">
+
+            <div class="beauty-title">
+                <h1>Popular Categories in Fashion</h1>
+                <div class="beauty-products">
+
+                    <div class="beauty-imgbox">
+                        <img src="imges/box/Media/man-31.jpg" alt="man-31">
+                        <h3>Men's Innerwear</h3>
+                    </div>
+                    <div class="beauty-imgbox">
+                        <img src="imges/women/sari5.jpg" alt="man-31">
+                        <h3>Women Saries</h3>
+                    </div>
+                    <div class="beauty-imgbox">
+                        <img src="imges/shop/shop-photo9.jpg" alt="man-31">
+                        <h3>Men's Footwear</h3>
+                    </div>
+                    <div class="beauty-imgbox">
+                        <img src="imges/box/Media/watches-2.jpg" alt="man-31">
+                        <h3>Watche's</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="beauty-title2">
+                <h1>Beauty Products</h1>
+                <div class="beauty-products1">
+                    <div class="beauty-imgbox2">
+                        <img src="imges/women/skincare.jpg" alt="man-31">
+                        <h3>Skin Care</h3>
+                    </div>
+                    <div class="beauty-imgbox2">
+                        <img src="imges/women/haircare.jpg" alt="man-31">
+                        <h3>Hair Care</h3>
+                    </div>
+                    <div class="beauty-imgbox2">
+                        <img src="imges/women/makeup.jpg" alt="man-31">
+                        <h3>Makeup Kit</h3>
+                    </div>
+                    <div class="beauty-imgbox2">
+                        <img src="imges/women/mask.jpg" alt="man-31">
+                        <h3>Mask & Sanitizer</h3>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- @@@   TOP  BRANDS  ### -->
+
+    <div class="brands-container">
+        <div class="brands-title">
+            <h1>Top Brands</h1>
+        </div>
+        <div class="brands-parent">
+            <div id="brands-img" id="next">
+                <img src="imges/OceanWP-eCommerce/Media/Client-Logo-01-thegem-person.png" alt="brand1">
+                <img src="imges/OceanWP-eCommerce/Media/Client-Logo-04-thegem-person.png" alt="brand2">
+                <img src="imges/OceanWP-eCommerce/Media/Client-Logo-06-thegem-person.png" alt="brand3">
+                <img src="imges/OceanWP-eCommerce/Media/Client-Logo-07-thegem-person.png" alt="brand4">
+                <img src="imges/OceanWP-eCommerce/Media/Client-Logo-15-thegem-person.png" alt="brand5">
+                <img src="imges/OceanWP-eCommerce/Media/Client-Logo-16-thegem-person.png" alt="brand6">
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+
+
+    <div class='footerCon'>
+        <div class='footerChield'>
+            <div class='footerAbout'>
+                <h1 class="FooterHeading">ABOUT</h1>
+                <p class='footerPgh'>Trusted by more than 1 Crore Indians
+                    Cash on Delivery | Free Delivery</p>
+
+            </div>
+            <div class='footerAbout'>
+                <h1 class="FooterHeading">HELP&SUPPORT</h1>
+                <div class='footerHelp'>
+                    <h4 class='footerNav'>Live Chat</h4>
+                    <h4 class='footerNav'>Faq</h4>
+                    <h4 class='footerNav'>Support</h4>
+                    <h4 class='footerNav'>Term & Service</h4>
+                </div>
+            </div>
+
+            <div class='footerAbout footerContact'>
+                <h1 class="FooterHeading">CONTACT</h1>
+                <div class='footerLinks'>
+                    <a href="mailto.com"> Red-Mart.com</a>
+                </div>
+                <div class='footerLinks'>
+                    <a href="tel:+44-000-888-999"> +44-000-888-999</a>
+                </div>
+                <div class='footerLinks'>
+                    <span class="footerMap"> Haryana ,Faridabad 121005</span>
+                </div>
+            </div>
+        </div>
+        <div class='footerLast'>
+            <p class='footerPgh'>© 2019 Apt Pro. All rights reserved</p>
+        </div>
+    </div>
+
+    <script src="e com.js"></script>
+
+</body>
+
+</html>
